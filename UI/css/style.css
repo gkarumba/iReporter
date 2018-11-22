@@ -1,0 +1,111 @@
+body{
+    font: 15px/1.5/Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+.report{
+    padding: 15px;
+    background: #ee9d0798;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.ville{
+    padding: 15px;
+    background: red;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/* Header */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 5px;
+    min-height: 30px;
+    border-bottom: #ee9d0798 5px solid;
+}
+
+header  a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #stamp {
+    float: left;
+}
+
+header #stamp {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 30px; 
+}
+
+header .highlight, header .active-page a {
+    color: #ee9d0798;
+    font-weight: bold;
+}
+header a:hover {
+    color:#fff;
+    font-weight: bold;
+}
+/* infor */
+#infor {
+    min-height: 450px;
+    text-align: center;
+    color: #ffffff;
+}
+#infor h1 {
+    margin-top: 100px;
+    color: black;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#infor p{
+    font-size: 20px;
+    color: black;
+    bottom: 20px;
+}
+
+/*footer*/
+footer {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+    border-top: #ee9d0798 3px solid;
+    }
