@@ -8,14 +8,15 @@ body{
 /* Global*/
 .container {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
 }
-
 ul{
     margin: 0;
     padding: 0;
 }
+
+/*homepage infor*/
 .report{
     padding: 15px;
     background: #ee9d0798;
@@ -32,7 +33,6 @@ ul{
     font-size: 30px;
     font-weight: bold;
 }
-
 
 
 /* Header */
@@ -145,16 +145,17 @@ header a:hover {
 .loginbox input[type="submit"]{
     border: none;
     outline: none;
-    height: 40px;
+    height: 30px;
+    background: #07c5ff;
+    color: #fff;
+    width:50%;
     font-size: 18px;
     border-radius: 20px;
     margin-bottom: 10px;
-
 }
-
 .loginbox input[type="submit"]:hover{
     cursor: pointer;
-    background: #07c5ff;
+    background: #fff;
     color: #000;
 }
 
@@ -178,7 +179,7 @@ header a:hover {
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 15px 15px;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
 .registerbox h1 {
@@ -233,16 +234,21 @@ header a:hover {
     text-decoration: none;
     font-size: 15px;
     line-height: 10px;
-    color: rgb(200, 11, 238);
+    color: #fff;
 }
+
 /*profile*/
+#place .profile, .records{
+    text-align: center;
+}
 .profile {
     width:  570px;
     height: 400px;
     background: #ee9d0798;
     color: #fff;
     top: 53%;
-    left: 25%;
+    float: left;
+    left:25%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
@@ -265,12 +271,10 @@ header a:hover {
     text-shadow: 2px 2px 4px #000000;
 }
 
-
 .profile a {
     text-decoration: none;
     font-size: 40px;
     padding-right: 10px;
-    margin-left: 100px;
     color: black;
     margin-bottom: 10px;
 }
@@ -283,7 +287,6 @@ header a:hover {
     width:50%;
     font-size: 18px;
     border-radius: 20px;
-    margin-left: 120px;
     margin-bottom: 10px;
 }
 .profile input[type="submit"]:hover{
@@ -338,7 +341,6 @@ header a:hover {
     width:80%;
     color: paleturquoise;
     font-size: 16px;
-    margin-left: 50px;
     margin-bottom: 30px;
 }
 .records input[type="submit"]{
@@ -350,7 +352,6 @@ header a:hover {
     width:50%;
     font-size: 18px;
     border-radius: 20px;
-    margin-left: 120px;
     margin-bottom: 10px;
 }
 .records input[type="submit"]:hover{
@@ -434,7 +435,6 @@ header a:hover {
     height: 30px;
     font-size: 15px;
     margin-left: 40px;
-   
 }
 .postbox input[type="checkbox"]{
     border: none;
@@ -501,7 +501,7 @@ header a:hover {
     border-radius: 20px;
 }
 .viewall table {
-    width:865px;
+    width:750px;
     margin-bottom: 20px;
 }
 .viewall table th{
@@ -525,7 +525,7 @@ header a:hover {
     color: paleturquoise;
     font-size: 16px;
     margin-left: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .viewall input[type="submit"] {
     border: none;
@@ -533,9 +533,15 @@ header a:hover {
     height: 30px;
     background: #07c5ff;
     color: #fff;
-    width:30%;
+    width:10%;
     font-size: 18px;
     border-radius: 20px;
+}
+.viewall #Cs {
+    margin-left: 50px;
+    height: 10px;
+    width:150%;
+    right:25%;
 }
 .viewall input[type="submit"]:hover{
     cursor: pointer;
@@ -565,3 +571,216 @@ footer {
     text-align: center;
     border-top: #ee9d0798 3px solid;
     }
+
+/* media queries */
+@media (max-width: 768px){
+    header #stamp,
+    header nav,
+    header nav li,
+    #place{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+    header{
+        padding-top: 0px;
+        min-height: 10px;
+        padding-bottom: 10px;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    header  a{
+        font-size: 15px;
+    }
+    .registerbox {
+        margin-top: 20px;
+    }
+    #infor h1{
+        margin-top: 10px;
+        font-size:30px;
+    }
+
+    .loginbox {
+        width:  350px;
+        height: 350px;
+        top: 55%; 
+        padding: 30px 30px;
+        border-radius: 20px;
+    }
+    .loginbox a{
+        font-size: 20px;
+    }
+    .registerbox {
+        width:  350px;
+        height: 405px;
+        top: 53%;
+        padding: 15px 30px;
+    }
+    .registerbox input[type="text"], input[type="email"], input[type="password"]{
+        height: 25px;
+        font-size: 13px;
+    }
+    
+    .registerbox input[type="submit"]{
+        width:75%;
+        height: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+    }
+    .registerbox a{
+        padding-top: 0px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .admin a{
+        margin-left: 0px;;
+        font-size: 15px;
+        margin-bottom: 0px;
+        }
+    .records {
+        margin: auto;
+        width:  380px;
+        height:430px;
+        top: 101%;
+        left: 50%;
+        padding: 5px 5px;
+    }
+    .records h1{
+        font-size: 15px;
+        margin-bottom: 0px;
+        padding-top: 0 0 0px;
+    }
+    .records table{
+        width: 375px;
+        height:300px;
+        font-size: 10px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    .records input[type="text"] {
+        height: 10px;
+        width:80%;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .records input[type="submit"] {
+        height: 10px;
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+    .profile{
+        width:  370px;
+        height: 290px;
+        top: 42%;
+        float: none;
+        left:50%;
+        padding: 5px 5px;
+    } 
+    .profile h1{
+        font-size: 20px;
+    }
+    .profile p{
+        font-size: 15px;
+    }
+    .profile input[type="submit"]{
+        font-size: 15px;
+    }
+    .descriptionbox{
+        width:  370px;
+        height: 310px;
+        top: 42%;
+        float: none;
+        left:50%;
+        padding: 5px 5px;
+    }
+    .descriptionbox h1{
+        font-size: 20px;
+    }
+    .descriptionbox p{
+        font-size: 15px;
+    }
+    .postbox{
+        width:  370px;
+        height: 275px;
+        top: 92%;
+        float: none;
+        left:50%;
+        padding: 5px 5px;
+    }
+    .postbox h1{
+        font-size: 17px;
+    }
+    .postbox textarea[name="RED-FLAG"]{
+        height: 12px;
+        width:100%;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .postbox textarea[name="SUBJECT"]{
+        height: 10px;
+        width:100%;
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+    .postbox p{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .postbox input[type="checkbox"]{
+        font-size: 12px;
+    }
+    .postbox input[type="submit"] {
+        height: 15px;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .postbox select {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .postbox input[type="file"]{
+        height: 10px;
+        font-size: 10px;
+        margin-left: 40px;
+    }
+    .postbox input[type="checkbox"]{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    
+    .viewall{
+        height:650px;
+        width:385px;
+        float: left;
+        top:75%;
+        padding:5px 5px;
+    }
+    .viewall table {
+        width:375px;
+        height: 440px;
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+    .viewall input[type="text"]{
+        height: 15px;
+    }
+    .viewall input[type="submit" ] {
+        height: 30px;
+        width:30%;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    .viewall select{
+        margin-bottom: 5px;
+    }
+    .viewall #Cs {
+        margin-left: 50px;
+        height: 10px;
+        width:150%;
+        right:25%;
+    }
+   
+    
+}
