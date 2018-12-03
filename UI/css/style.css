@@ -212,7 +212,7 @@ header a:hover {
     font-size: 16px;
 }
 
-.registerbox input[type="submit"]{
+.registerbox button{
     border: none;
     outline: none;
     height: 30px;
@@ -223,7 +223,7 @@ header a:hover {
     margin-bottom: 10px;
 }
 
-.registerbox input[type="submit"]:hover{
+.registerbox button:hover{
     cursor: pointer;
     background: #fff;
     color: #000;
