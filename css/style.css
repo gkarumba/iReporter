@@ -172,7 +172,7 @@ header a:hover {
 /*registerform*/
 .registerbox {
     width:  470px;
-    height: 400px;
+    height: 500px;
     background: #ee9d0798;
     color: #fff;
     top: 53%;
@@ -210,7 +210,7 @@ header a:hover {
     border-bottom: 2px solid rgb(200, 11, 238);
     background: transparent;
     outline: none;
-    height: 40px;
+    height: 20px;
     color: paleturquoise;
     font-size: 16px;
 }
@@ -219,7 +219,7 @@ header a:hover {
     width: 100%;
     border: none;
     outline: none;
-    height: 30px;
+    height: 20px;
     background: #07c5ff;
     color: #fff;
     font-size: 18px;
@@ -616,18 +616,19 @@ footer {
     }
     .registerbox {
         width:  350px;
-        height: 405px;
+        height: 500px;
         top: 53%;
         padding: 15px 30px;
+        margin-bottom: 5px;
     }
     .registerbox input[type="text"], input[type="email"], input[type="password"]{
-        height: 25px;
+        height: 15px;
         font-size: 13px;
     }
     
     .registerbox input[type="submit"]{
         width:75%;
-        height: 20px;
+        height: 10px;
         font-size: 15px;
         margin-bottom: 10px;
         margin-left: 40px;
