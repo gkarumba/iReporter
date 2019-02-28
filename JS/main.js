@@ -25,8 +25,10 @@ function registerUser(){
     .then(async (res) => {
         if (res.ok){
             const data = await res.json();
+            redirect: window.location.assign("./login.html")
             output = `<p style="background: #004e00;color: white;text-align: center;padding: 20px;font-size: 1.3em;font-family: 'Boogaloo', cursive;">${data.message}</p>`;
-            return document.getElementById("registrationResponse").innerHTML = output;
+            return document.getElementById("registrationResponse").innerHTML = output
+            
         }
         if (res.status == 400){
             const data_1 = await res.json();
