@@ -172,7 +172,7 @@ header a:hover {
 /*registerform*/
 .registerbox {
     width:  470px;
-    height: 450px;
+    height: 400px;
     background: #ee9d0798;
     color: #fff;
     top: 53%;
@@ -216,6 +216,7 @@ header a:hover {
 }
 
 .registerbox button{
+    width: 100%;
     border: none;
     outline: none;
     height: 30px;
