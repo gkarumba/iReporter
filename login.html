@@ -9,37 +9,38 @@
 </head>
 <body>
     <header>
-            <div class="container">
-                <div id="stamp">
-                    <h1><span class="highlight">iReporter </span></h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active-page"><a href="login.html">Sign In</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <div id="stamp">
+                <h1><span class="highlight">iReporter </span></h1>
             </div>
-        </header>
-        <section class ="loginbox">
-                <div>
-                        <h1>
-                            Login Here
-                        </h1>
-                        <form>
-                            <p>Username</p>
-                            <input type="text" name="" placeholder="Enter Username">
-                            
-                            <p> Password</p>
-                            <input type="password" name="" placeholder="Enter Password">
-                            <a href="profile.html"><button type="button">Login</button></a>
-                            <a href="#">Forgot Your Password?</a><br>
-                            <a href="registration.html"> Don't have an account?</a> 
-                        </form>
-                    </div>
-                </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active-page"><a href="login.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class ="loginbox">
+        <div>
+            <p id="loginResponse"></p>
+            <h1>
+                Login Here
+            </h1>
+            <form>
+                <p>Email</p>
+                <input id="email" type="email" name="" placeholder="Enter Email">
+                <p> Password</p>
+                <input id="password" type="password" name="" placeholder="Enter Password">
+                <button id="loginButton" type="button">Login</button><br>
+                <a href="#">Forgot Your Password?</a><br>
+                <a href="registration.html"> Don't have an account?</a> 
+            </form>
+            </div>
+        </section>
     <footer>
         <p>iReporter, copyright &copy; 2018</p>
     </footer>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
